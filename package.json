@@ -6,6 +6,9 @@
   "repository": "https://github.com/graphql-cli/graphql-cli",
   "author": "Aric Beagley <abeagley@heliotraining.com>",
   "license": "MIT",
+  "bin": {
+    "gql-cli": "bin/gql-cli"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
@@ -29,5 +32,11 @@
     "metalsmith": "^2.3.0",
     "metalsmith-layouts": "^1.8.1",
     "yargs": "^8.0.2"
+  },
+  "scripts": {
+    "build": "babel src -d build",
+    "postinstall": "npm run-script build",
+    "start": "nodemon --watch src --exec 'npm run-script build'",
+    "test": "mocha --compilers js:babel-register"
   }
 }
