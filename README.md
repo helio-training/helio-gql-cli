@@ -15,7 +15,7 @@ Currently in development.
 ## Roadmap / Features
 
 - [ ] Core - Git Template Manager
-- [ ] Core - CLI Interface
+- [X] Core - CLI Interface
 - [ ] Core - Metalsmith Generator
 - [ ] Core - Metalsmith Metadata From Template Repos
 - [ ] Core - Default Templates  

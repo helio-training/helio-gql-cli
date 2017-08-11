@@ -1,11 +1,14 @@
 {
-  "name": "graphql-cli",
+  "name": "helio-gql-cli",
   "version": "0.1.0",
   "description": "A CLI for quickly bootstrapping GraphQL services based on various template repositories",
   "main": "src/cli.js",
-  "repository": "https://github.com/graphql-cli/graphql-cli",
+  "repository": "https://github.com/helio-training/helio-gql-cli",
   "author": "Aric Beagley <abeagley@heliotraining.com>",
   "license": "MIT",
+  "bin": {
+    "gql-cli": "bin/gql-cli"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
@@ -25,9 +28,16 @@
   },
   "dependencies": {
     "chalk": "^2.1.0",
+    "download-git-repo": "^1.0.1",
     "inquirer": "^3.2.1",
     "metalsmith": "^2.3.0",
     "metalsmith-layouts": "^1.8.1",
     "yargs": "^8.0.2"
+  },
+  "scripts": {
+    "build": "babel src -d build",
+    "postinstall": "npm run-script build",
+    "start": "nodemon --watch src --exec 'npm run-script build'",
+    "test": "mocha --compilers js:babel-register"
   }
 }
