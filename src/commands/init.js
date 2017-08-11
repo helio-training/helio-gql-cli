@@ -1,10 +1,12 @@
 import fs from 'fs'
 import path from 'path'
 import logger from '../logger'
+import GitRepoManager from '../git-repo-manager'
 
 import newDirectoryPrompt from '../prompts/existing-directory'
 
 export const run = async (args) => {
+  const repoMgr = new GitRepoManager()
   /*
    TODO: Fire the generators
   */

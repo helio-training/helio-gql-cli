@@ -1,5 +1,5 @@
 {
-  "name": "graphql-cli",
+  "name": "helio-gql-cli",
   "version": "0.1.0",
   "description": "A CLI for quickly bootstrapping GraphQL services based on various template repositories",
   "main": "src/cli.js",
@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "chalk": "^2.1.0",
+    "download-git-repo": "^1.0.1",
     "inquirer": "^3.2.1",
     "metalsmith": "^2.3.0",
     "metalsmith-layouts": "^1.8.1",
