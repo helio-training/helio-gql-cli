@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A CLI for quickly bootstrapping GraphQL services based on various template repositories",
   "main": "src/cli.js",
-  "repository": "https://github.com/graphql-cli/graphql-cli",
+  "repository": "https://github.com/helio-training/helio-gql-cli",
   "author": "Aric Beagley <abeagley@heliotraining.com>",
   "license": "MIT",
   "bin": {

@@ -8,7 +8,7 @@ console.log(os.homedir())
 
 class GitRepoManager {
   constructor () {
-    this.cacheDir = path.resolve(os.homedir(), '.graphql-cli-cache')
+    this.cacheDir = path.resolve(os.homedir(), '.helio-gql-cache')
     this.ensureCacheDirExists()
   }
 
